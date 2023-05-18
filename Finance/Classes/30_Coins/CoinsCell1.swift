@@ -57,7 +57,7 @@ class CoinsCell1: UICollectionViewCell {
 	func setChartUI() {
 
 		chartView.delegate = self
-		chartView.chartDescription?.enabled = false
+		chartView.chartDescription.enabled = false
 		chartView.setScaleEnabled(false)
 		chartView.xAxis.enabled = false
 		chartView.leftAxis.enabled = false
@@ -94,12 +94,7 @@ class CoinsCell1: UICollectionViewCell {
 		set1.drawVerticalHighlightIndicatorEnabled = false
 		set1.drawHorizontalHighlightIndicatorEnabled = false
 
-		let gradientColors = [AppColor.Theme.withAlphaComponent(0.01).cgColor,
-							  AppColor.Theme.withAlphaComponent(0.25).cgColor]
-		let gradient = CGGradient(colorsSpace: nil, colors: gradientColors as CFArray, locations: nil)!
-
 		set1.fillAlpha = 1
-		set1.fill = Fill(linearGradient: gradient, angle: 90)
 		set1.drawFilledEnabled = true
 
 		let data = LineChartData(dataSet: set1)

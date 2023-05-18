@@ -17,7 +17,7 @@ private let MAX_LENGTH = 5
 @objc protocol Testing123 { }
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
-public class IntAxisValueFormatter: NSObject, IAxisValueFormatter {
+public class IntAxisValueFormatter: NSObject, AxisValueFormatter {
 
 	//-------------------------------------------------------------------------------------------------------------------------------------------
 	public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
@@ -27,7 +27,7 @@ public class IntAxisValueFormatter: NSObject, IAxisValueFormatter {
 }
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
-public class LargeValueFormatter: NSObject, IValueFormatter, IAxisValueFormatter {
+public class LargeValueFormatter: NSObject, ValueFormatter, AxisValueFormatter {
 
 	public var suffix = ["", "k", "m", "b", "t"]
 	public var appendix: String?

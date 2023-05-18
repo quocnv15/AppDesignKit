@@ -106,7 +106,7 @@ class StepsView: UIViewController {
 		chartView.delegate = self
 		chartView.pinchZoomEnabled = false
 		chartView.doubleTapToZoomEnabled = false
-		chartView.chartDescription?.enabled = false
+		chartView.chartDescription.enabled = false
 		chartView.drawBarShadowEnabled = false
 		chartView.legend.enabled = false
 		chartView.leftAxis.enabled = false

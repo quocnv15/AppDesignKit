@@ -13,7 +13,7 @@ import Foundation
 import Charts
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
-public class Running2DateValueFormatter: NSObject, IAxisValueFormatter {
+public class Running2DateValueFormatter: NSObject, AxisValueFormatter {
 
 	private let dateFormatter = DateFormatter()
 

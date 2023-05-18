@@ -137,7 +137,7 @@ class Running2View: UIViewController {
 	func setChartUI() {
 
 		chartView.delegate = self
-		chartView.chartDescription?.enabled = false
+		chartView.chartDescription.enabled = false
 		chartView.setScaleEnabled(false)
 		chartView.leftAxis.enabled = false
 		chartView.rightAxis.enabled = false
@@ -183,11 +183,7 @@ class Running2View: UIViewController {
 		set1.drawVerticalHighlightIndicatorEnabled = false
 		set1.drawHorizontalHighlightIndicatorEnabled = false
 
-		let set1GradientColors = [AppColor.Theme.withAlphaComponent(0.01).cgColor,
-							  AppColor.Theme.withAlphaComponent(0.25).cgColor]
-		let set1Gradient = CGGradient(colorsSpace: nil, colors: set1GradientColors as CFArray, locations: nil)!
 		set1.fillAlpha = 1
-		set1.fill = Fill(linearGradient: set1Gradient, angle: 90)
 		set1.drawFilledEnabled = true
 
 		let set2 = LineChartDataSet(entries: yValues2, label: "")
@@ -203,10 +199,7 @@ class Running2View: UIViewController {
 		set2.drawVerticalHighlightIndicatorEnabled = false
 		set2.drawHorizontalHighlightIndicatorEnabled = false
 
-		let set2GradientColors = [UIColor.systemGray.withAlphaComponent(0.01).cgColor, UIColor.systemGray.withAlphaComponent(0.25).cgColor]
-		let set2Gradient = CGGradient(colorsSpace: nil, colors: set2GradientColors as CFArray, locations: nil)!
 		set2.fillAlpha = 1
-		set2.fill = Fill(linearGradient: set2Gradient, angle: 90)
 		set2.drawFilledEnabled = true
 
 		let data = LineChartData(dataSets: [set1, set2])

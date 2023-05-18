@@ -116,7 +116,7 @@ class MonthlyReportView: UIViewController {
 	func setChartUI() {
 
 		chartView.delegate = self
-		chartView.chartDescription?.enabled = false
+		chartView.chartDescription.enabled = false
 		chartView.drawEntryLabelsEnabled = false
 		chartView.usePercentValuesEnabled = false
 		chartView.drawCenterTextEnabled = false

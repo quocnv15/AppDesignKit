@@ -140,7 +140,7 @@ class ReportView: UIViewController {
 	func setChartUI() {
 
 		chartView.delegate = self
-		chartView.chartDescription?.enabled = false
+		chartView.chartDescription.enabled = false
 		chartView.drawBarShadowEnabled = false
 		chartView.legend.enabled = false
 		chartView.leftAxis.enabled = false
