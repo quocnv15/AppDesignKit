@@ -99,8 +99,6 @@ The pre-programmed views can be used instantly by copying them to your existing 
 | Page 89  | Page 90 | | |
 | ------------- | ------------- | ------------- | ------------- |
 |  <img src="screenshots/89.png" width="200"/> |  <img src="screenshots/90.png" width="200"/>  | | |
-|  <img src="screenshots/89.png" width="200"/> |  <img src="screenshots/90.png" width="200"/>  | | |
-|  <img src="screenshots/89.png" width="200"/> |  <img src="screenshots/90.png" width="200"/>  | | |
 
 | Page 91  | Page 92 | Page 93 | Page 94 |
 | ------------- | ------------- | ------------- | ------------- |
